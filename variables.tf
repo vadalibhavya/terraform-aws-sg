@@ -17,10 +17,6 @@ variable "project_name" {
   default = "roboshop"
 }
 variable "tags" {
-  type = map(string)
-  default = {
-    "Name"        = "roboshop-terraform-dev"
-    "Environment" = "dev"
-    "terraform"   = "true"
-  }
+  type = list(string)
+  default = []
 }
