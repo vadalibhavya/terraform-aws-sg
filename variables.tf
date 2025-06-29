@@ -20,3 +20,8 @@ variable "tags" {
   type = list(string)
   default = []
 }
+
+variable "env" {
+  type    = string
+  default = "dev"
+}
